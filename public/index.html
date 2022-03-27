@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarot App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/style.css">
+<style type="text/css">button.btn[data-v-5f0b9ba1]{display:inline-block;font-weight:300;line-height:1.25;text-align:center;white-space:nowrap;vertical-align:middle;user-select:none;border:1px solid transparent;cursor:pointer;letter-spacing:1px;transition:all .15s ease}button.btn.btn-sm[data-v-5f0b9ba1]{padding:.4rem .8rem;font-size:.8rem;border-radius:.2rem}button.btn.btn-primary[data-v-5f0b9ba1]{color:#fff;background-color:#45C8F1;border-color:#45C8F1}button.btn.btn-outline-primary[data-v-5f0b9ba1]{color:#45C8F1;background-color:transparent;border-color:#45C8F1}button.btn.btn-danger[data-v-5f0b9ba1]{color:#fff;background-color:#FF4949;border-color:#FF4949}.text-muted[data-v-5f0b9ba1]{color:#8492A6}.text-center[data-v-5f0b9ba1]{text-align:center}.drop-down-enter[data-v-5f0b9ba1],.drop-down-leave-to[data-v-5f0b9ba1]{transform:translateX(0) translateY(-20px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.drop-down-enter-active[data-v-5f0b9ba1],.drop-down-leave-active[data-v-5f0b9ba1]{transition:all .15s}.move-left-enter[data-v-5f0b9ba1],.move-left-leave-to[data-v-5f0b9ba1]{transform:translateY(0) translateX(-80px);transition-timing-function:cubic-bezier(0.74, 0.04, 0.26, 1.05);opacity:0}.move-left-enter-active[data-v-5f0b9ba1],.move-left-leave-active[data-v-5f0b9ba1]{transition:all .15s}.no-tr[data-v-5f0b9ba1]{transition:none !important}.no-tr *[data-v-5f0b9ba1]{transition:none !important}.overlay[data-v-5f0b9ba1]{position:fixed;background:rgba(220,220,220,0.8);display:flex;align-items:center;justify-content:center;top:0;left:0;right:0;bottom:0;transition:all 0.2s ease;opacity:0;visibility:hidden}.overlay .modal[data-v-5f0b9ba1]{transition:all 0.2s ease;opacity:0;transform:scale(0.6);overflow:hidden}.overlay.show[data-v-5f0b9ba1]{opacity:1;visibility:visible}.overlay.show .modal[data-v-5f0b9ba1]{opacity:1;transform:scale(1)}.panel[data-v-5f0b9ba1]{padding:6px 10px;display:flex;width:100%;box-sizing:border-box;align-items:center;border-radius:4px;position:relative;border:1px solid #eaf7ff;background:#f7fcff;outline:none;transition:all 0.07s ease-in-out}.btn[data-v-5f0b9ba1]{cursor:pointer;box-sizing:border-box}.light-btn[data-v-5f0b9ba1]{padding:6px 10px;display:flex;width:100%;box-sizing:border-box;align-items:center;border-radius:4px;position:relative;border:1px solid #eaf7ff;background:#f7fcff;outline:none;cursor:pointer;transition:all 0.07s ease-in-out}.light-btn[data-v-5f0b9ba1]:hover{background:#e0f4ff;border-color:#8acfff}.shake[data-v-5f0b9ba1]{animation:shake-data-v-5f0b9ba1 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;transform:translate3d(0, 0, 0)}@keyframes shake-data-v-5f0b9ba1{10%,90%{transform:translate3d(-1px, 0, 0)}20%,80%{transform:translate3d(2px, 0, 0)}30%,50%,70%{transform:translate3d(-4px, 0, 0)}40%,60%{transform:translate3d(4px, 0, 0)}}.pulse[data-v-5f0b9ba1]{animation:pulse-data-v-5f0b9ba1 2s ease infinite}@keyframes pulse-data-v-5f0b9ba1{0%{opacity:.7}50%{opacity:.4}100%{opacity:.7}}.flash-once[data-v-5f0b9ba1]{animation:flash-once 3.5s ease 1}@keyframes fade-up-data-v-5f0b9ba1{0%{transform:translate3d(0, 10px, 0);opacity:0}100%{transform:translate3d(0, 0, 0);opacity:1}}.fade-in[data-v-5f0b9ba1]{animation:fade-in-data-v-5f0b9ba1 .3s ease-in-out}@keyframes fade-in-data-v-5f0b9ba1{0%{opacity:0}100%{opacity:1}}.spin[data-v-5f0b9ba1]{animation-name:spin-data-v-5f0b9ba1;animation-duration:2000ms;animation-iteration-count:infinite;animation-timing-function:linear}@keyframes spin-data-v-5f0b9ba1{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}.bounceIn[data-v-5f0b9ba1]{animation-name:bounceIn-data-v-5f0b9ba1;transform-origin:center bottom;animation-duration:1s;animation-fill-mode:both;animation-iteration-count:1}@keyframes bounceIn-data-v-5f0b9ba1{0%,20%,40%,60%,80%,100%{-webkit-transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1);transition-timing-function:cubic-bezier(0.215, 0.61, 0.355, 1)}0%{opacity:1;-webkit-transform:scale3d(0.8, 0.8, 0.8);transform:scale3d(0.8, 0.8, 0.8)}20%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}40%{-webkit-transform:scale3d(0.9, 0.9, 0.9);transform:scale3d(0.9, 0.9, 0.9)}60%{opacity:1;-webkit-transform:scale3d(1.03, 1.03, 1.03);transform:scale3d(1.03, 1.03, 1.03)}80%{-webkit-transform:scale3d(0.97, 0.97, 0.97);transform:scale3d(0.97, 0.97, 0.97)}100%{opacity:1;-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@keyframes dots-data-v-5f0b9ba1{0%,20%{color:rgba(0,0,0,0);text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}40%{color:#8492A6;text-shadow:0.25em 0 0 rgba(0,0,0,0),0.5em 0 0 rgba(0,0,0,0)}60%{text-shadow:0.25em 0 0 #8492A6,0.5em 0 0 rgba(0,0,0,0)}80%,100%{text-shadow:.25em 0 0 #8492A6, .5em 0 0 #8492A6}}@keyframes recording-data-v-5f0b9ba1{0%{box-shadow:0px 0px 5px 0px rgba(173,0,0,0.3)}65%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0.3)}90%{box-shadow:0px 0px 5px 5px rgba(173,0,0,0)}}body[data-v-5f0b9ba1]{margin:0;font-size:100%;color:#3C4858}a[data-v-5f0b9ba1]{text-decoration:none;color:#45C8F1}h1[data-v-5f0b9ba1],h2[data-v-5f0b9ba1],h3[data-v-5f0b9ba1],h4[data-v-5f0b9ba1]{margin-top:0}svg[data-v-5f0b9ba1]{outline:none}.container_selected_area[data-v-5f0b9ba1]{display:none;visibility:hidden;padding:0;position:fixed;top:0;left:0;right:0;bottom:0;z-index:2147483647}.container_selected_area.active[data-v-5f0b9ba1]{visibility:visible;display:block}.container_selected_area .label[data-v-5f0b9ba1]{font-family:"Didact Gothic Regular",sans-serif;font-size:22px;text-align:center;padding-top:15px}.container_selected_area .area[data-v-5f0b9ba1]{display:none;position:fixed;z-index:2147483647;border:1px solid #1e83ff;background:rgba(30,131,255,0.1);box-sizing:border-box}.container_selected_area .area.active[data-v-5f0b9ba1]{display:block;top:0;left:0}.hide[data-v-5f0b9ba1]{display:none}
+</style></head>
+<body>
+  <section id="principal">
+      <div id="inputContainer">
+        <h1> Cartas de Tarot </h1>
+          <form>
+              <div class="mb-3">
+                <label for="jugadorUnoInput" class="form-label">Jugador 1</label>
+                <input type="text" class="form-control" id="jugadorUnoInput" aria-describedby="jugadorUnoHelp" required="">
+                <div id="jugadorUnoHelp" class="form-text">Ingrese el nombre del primer jugador</div>
+              </div>
+              <div class="mb-3">
+                  <label for="jugadorDosInput" class="form-label">Jugador 2</label>
+                  <input type="text" class="form-control" id="jugadorDosInput" aria-describedby="jugadorDosHelp" required="">
+                  <div id="jugadorDosHelp" class="form-text">Ingrese el nombre del segundo jugador</div>
+                </div>
+              <button type="button" class="btn" id="voyATenerSuerte">Tirar Cartas</button>
+          </form>
+        </div>
+        <div id="listaJugadas" style="display: none;"><h3>Lista de Jugadas</h3></div>
+
+  </section>
+  <section id="loader" style="display: none;">
+      <h2>Probando Suerte</h2>
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_7yawqxvx.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop="" autoplay=""></lottie-player>
+      <div class="text-center">
+          <button class="btn btn-primary" type="button" id="repartiendoCartas">
+              <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+              Repartiendo Cartas
+            </button>
+  </div></section><div id="scrnli_recorder_root"></div>
+  <section id="carruselCartas" style="display: none;">
+      <div class="closeContainer">
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modalMenu">
+           X 
+        </button>
+      </div>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h4 class="cartasJugador" id="tituloSlide1Jugador">Jugador 1</h4>
+              <picture>
+              <img src="." class="d-block" alt="..." id="imagenSlide1Carta">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5 id="nombreCartaSlide1">First slide label</h5>
+                <p id="descripcionSlide1">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h4 class="cartasJugador" id="tituloSlide2Jugador">Jugador 1</h4>
+              <picture>
+              <img src="." class="d-block" alt="..." id="imagenSlide2Carta">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5 id="nombreCartaSlide2">First slide label</h5>
+                <p id="descripcionSlide2">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h4 class="cartasJugador" id="tituloSlide3Jugador">Jugador 1</h4>
+              <picture>
+              <img src="." class="d-block" alt="..." id="imagenSlide3Carta">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5 id="nombreCartaSlide3">First slide label</h5>
+                <p id="descripcionSlide3">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h4 class="cartasJugador" id="tituloSlide4Jugador">Jugador 1</h4>
+              <picture>
+              <img src="." class="d-block" alt="..." id="imagenSlide4Carta">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5 id="nombreCartaSlide4">First slide label</h5>
+                <p id="descripcionSlide4">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h4 class="cartasJugador" id="tituloSlide5Jugador">Jugador 1</h4>
+              <picture>
+              <img src="." class="d-block" alt="..." id="imagenSlide5Carta">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5 id="nombreCartaSlide5">First slide label</h5>
+                <p id="descripcionSlide5">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <h4 class="cartasJugador" id="tituloSlide6Jugador">Jugador 1</h4>
+              <picture>
+              <img src="." class="d-block" alt="..." id="imagenSlide6Carta">
+              </picture>
+              <div class="carousel-caption d-sm-block">
+                <h5 id="nombreCartaSlide6">First slide label</h5>
+                <p id="descripcionSlide6">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+  </section>
+
+  <section id="resultados" style="display: none;">
+    <div class="closeContainer">
+      <h4 id="salirResultadosX">X</h4>
+    </div>
+    <div class="resultadosJugador">
+      <h4 id="resultadoNombreJugador1">Jugador 1</h4>
+      <div class="resultadosCartasImagenes">
+        <div>
+        <img src="..." alt="" id="imagenResultadosJ1I1">
+        <p id="pieResultadosJ1I1"></p>
+        </div>
+        <div>
+        <img src="..." alt="" id="imagenResultadosJ1I2">
+        <p id="pieResultadosJ1I2"></p>
+        </div>
+        <div>
+        <img src="..." alt="" id="imagenResultadosJ1I3">
+        <p id="pieResultadosJ1I3"></p>
+        </div>
+      </div>
+    </div>
+    <div class="resultadosJugador">
+      <h4 id="resultadoNombreJugador2">Jugador 2</h4>
+      <div class="resultadosCartasImagenes">
+        <div>
+          <img src="..." alt="" id="imagenResultadosJ2I1">
+          <p id="pieResultadosJ2I1"></p>
+        </div>
+        <div>
+          <img src="..." alt="" id="imagenResultadosJ2I2">
+          <p id="pieResultadosJ2I2"></p>
+        </div>
+        <div>
+          <img src="..." alt="" id="imagenResultadosJ2I3">
+          <p id="pieResultadosJ2I3"></p>
+        </div>
+
+      </div>
+    </div>
+    <h3>MATCH</h3>
+    <div id="matchNo">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+      <lottie-player src="https://assets1.lottiefiles.com/private_files/lf30_jq4i7W.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop="" autoplay=""></lottie-player>
+    </div>
+    <div id="matchSi">
+      <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_v2PAPH.json" background="transparent" speed="1" style="width: 100px; height: 100px;" loop="" autoplay=""></lottie-player>
+    </div>
+    <div>
+      <button type="button" class="btn" id="resultadosGuardarBtn">Guardar</button>
+      <button type="button" class="btn btn-danger" id="salirResultados">Salir</button>
+    </div>
+  </section>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¿Que deseas hacer?</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <button type="button" class="btn btn-primary" id="verResultadosModal" data-bs-dismiss="modal">👁 Ver Resultados</button>
+                <button type="button" class="btn btn-primary" id="volverATirarModal" data-bs-dismiss="modal">🃏 Volver a Tirar</button>
+              </div>      
+            </div>
+          </div>
+        </div>
+
+  
+  <script src="./js/cartas.js"></script>
+  <script src="./js/main.js"></script>
+
+<iframe src="chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/audio-devices.html" allow="microphone" style="display: none;"></iframe><input type="file" id="" name="file" style="display: none;"><div data-v-5f0b9ba1="" class="container_selected_area" style="cursor: url(&quot;chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/assets/images/cursor-imagen.svg&quot;) 9 9, crosshair;"><div data-v-5f0b9ba1="" class="area"></div></div></body></html>

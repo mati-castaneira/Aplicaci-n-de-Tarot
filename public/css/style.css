@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+
+:root {
+    --dark-primary-color:       #512DA8;
+    --default-primary-color:    #673AB7;
+    --light-primary-color:      #D1C4E9;
+    --text-primary-color:       #FFFFFF;
+    --accent-color:             #607D8B;
+    --primary-background-color: #D1C4E9;
+    --primary-text-color:       #212121;
+    --secondary-text-color:     #757575;
+    --disabled-text-color:      #BDBDBD;
+    --divider-color:            #BDBDBD;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--dark-primary-color);
+}
+
+section{
+    background-color: var(--primary-background-color);
+    width: 390px;
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    border: 2px solid var(--divider-color);
+}
+
+
+
+
+#loader{
+    font-family: 'Sen', sans-serif;
+    justify-content: center;
+    color:var(--dark-primary-color);
+}
+
+#repartiendoCartas{
+    font-family: 'Sen', sans-serif;
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--primary-text-color);
+    font-size: 25px;
+    color: var(--dark-primary-color);
+}
+
+
+#carruselCartas {
+    display: block;
+    color: var(--dark-primary-color);
+}
+
+
+.closeContainer{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.closeContainer button{
+    background-color: transparent;
+    color: var(--dark-primary-color);
+    font-weight: bold;
+    font-size: 20px;
+    border: transparent;
+    border-radius: 50%;
+}
+
+.closeContainer button:hover{
+    border: transparent;
+}
+
+
+.closeContainer h4{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+
+.carousel-item{
+    height: 60vh;
+    width: 100%;
+}
+
+.carousel-item h4 ,.resultadosJugador h4{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Sen', sans-serif;
+}
+
+picture {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+picture img{
+    height: 180px;
+}
+
+.carousel-item h5 {
+    color: var(--dark-primary-color);
+    text-shadow: 1px 1px 1px var(--accent-color);
+}
+
+.carousel-item p{
+    color: var(--default-primary-color);
+    font-weight: 600;
+    text-align: center;
+    font-size: 15px;
+}
+
+.carousel-indicators button, .carousel-control-prev, .carousel-control-next{
+    filter: invert(100%);
+}
+
+
+.modal-content{
+    max-width: 50%;
+}
+
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-body button{
+    margin: 10px;
+    background-color: var(--dark-primary-color);
+}
+
+.resultadosJugador{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.resultadosCartasImagenes {
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.resultadosCartasImagenes img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: solid 2px var(--dark-primary-color);
+
+}
+
+.resultadosCartasImagenes div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.resultadosCartasImagenes div p{
+    width: 120px;
+    text-align: center;
+    word-wrap: break-all;
+}
+
+#resultados{
+    justify-content: space-around;
+
+}
+
+#resultados h3{
+    font-family: 'Sen', sans-serif;
+    font-size: 50px;
+}
+
+#resultadosGuardarBtn{
+    background-color: var(--default-primary-color);
+    color: var(--text-primary-color);
+}
+
+#principal{
+    padding: 20px 0px;
+
+}
+
+#inputContainer h1{
+    font-family: 'Sen', sans-serif;
+    text-align: center;
+}
+
+#inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 25px;
+
+}
+
+#inputContainer form {
+    text-align: center;
+    margin: 10px 0px;
+}
+
+#inputContainer form label{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#inputContainer form button{
+    background-color: var(--default-primary-color);
+    color: var(--text-primary-color);
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+
+
+
+#listaJugadas{
+    width: 100%;
+    padding: 10px 25px;
+}
+
+#listaJugadas h3{
+    font-family: 'Sen', sans-serif;
+    text-align: center;
+}
+
+#listaJugadas div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    margin: 10px;
+    padding-left: 10px;
+    background-color: var(--divider-color);
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.45);
+}
+
+#listaJugadas div button{
+    background-color: var(--default-primary-color);
+}
+
+#listaJugadas h5{
+    min-width: 60%;
+}
+
+.botonesListaJugadas button{
+    margin-left: 5px;
+}
+
+.modal-content{
+    background-color: var(--primary-background-color);
+    min-width: 250px;
+    margin: auto;
+}
+
+
+/*----------------------100% PARA MOVILES-------------------------------*/
+@media only screen and (max-width: 768px) {
+    section{
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    .carousel-item{
+        height: 90vh;
+        width: 100vw;
+    }
+
+}
+
